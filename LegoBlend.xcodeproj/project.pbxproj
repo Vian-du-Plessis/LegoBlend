@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		927FEFE628DBBF7000632ACC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FEFE528DBBF7000632ACC /* OnboardingView.swift */; };
 		92D766B828D8C9BC002CC687 /* LegoBlendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */; };
-		92D766BA28D8C9BC002CC687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B928D8C9BC002CC687 /* ContentView.swift */; };
+		92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B928D8C9BC002CC687 /* SplashView.swift */; };
 		92D766BC28D8C9C4002CC687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D766BB28D8C9C4002CC687 /* Assets.xcassets */; };
 		92D766BF28D8C9C4002CC687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D766BE28D8C9C4002CC687 /* Preview Assets.xcassets */; };
 		92D766C928D8C9C4002CC687 /* LegoBlendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766C828D8C9C4002CC687 /* LegoBlendTests.swift */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		927FEFE528DBBF7000632ACC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		92D766B428D8C9BC002CC687 /* LegoBlend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoBlend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoBlendApp.swift; sourceTree = "<group>"; };
-		92D766B928D8C9BC002CC687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92D766B928D8C9BC002CC687 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		92D766BB28D8C9C4002CC687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D766BE28D8C9C4002CC687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92D766C428D8C9C4002CC687 /* LegoBlendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoBlendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */,
-				92D766B928D8C9BC002CC687 /* ContentView.swift */,
+				927FEFE528DBBF7000632ACC /* OnboardingView.swift */,
+				92D766B928D8C9BC002CC687 /* SplashView.swift */,
 				92D766BB28D8C9C4002CC687 /* Assets.xcassets */,
 				92D766BD28D8C9C4002CC687 /* Preview Content */,
 			);
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D766BA28D8C9BC002CC687 /* ContentView.swift in Sources */,
+				927FEFE628DBBF7000632ACC /* OnboardingView.swift in Sources */,
+				92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */,
 				92D766B828D8C9BC002CC687 /* LegoBlendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

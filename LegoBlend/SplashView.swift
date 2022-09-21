@@ -12,7 +12,7 @@ struct Logo : Identifiable{
    let name: String
 }
 
-struct ContentView: View {
+struct SplashView: View {
     @State private var isExploded = false
     @State private var scaleAnimation = false
     let firstWord = [
@@ -98,8 +98,6 @@ struct ContentView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 //              Fourth HStack - Bottom Left
-                
-
             }
         }
     }
