@@ -13,9 +13,8 @@
 		92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B928D8C9BC002CC687 /* SplashView.swift */; };
 		92D766BC28D8C9C4002CC687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D766BB28D8C9C4002CC687 /* Assets.xcassets */; };
 		92D766BF28D8C9C4002CC687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D766BE28D8C9C4002CC687 /* Preview Assets.xcassets */; };
-		92D766C928D8C9C4002CC687 /* LegoBlendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766C828D8C9C4002CC687 /* LegoBlendTests.swift */; };
-		92D766D328D8C9C4002CC687 /* LegoBlendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766D228D8C9C4002CC687 /* LegoBlendUITests.swift */; };
-		92D766D528D8C9C4002CC687 /* LegoBlendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766D428D8C9C4002CC687 /* LegoBlendUITestsLaunchTests.swift */; };
+		92DE135428EE33E8002A0E1D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE135328EE33E8002A0E1D /* RegisterView.swift */; };
+		92DE135628EE3AD5002A0E1D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE135528EE3AD5002A0E1D /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +43,9 @@
 		92D766BB28D8C9C4002CC687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D766BE28D8C9C4002CC687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92D766C428D8C9C4002CC687 /* LegoBlendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoBlendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92D766C828D8C9C4002CC687 /* LegoBlendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoBlendTests.swift; sourceTree = "<group>"; };
 		92D766CE28D8C9C4002CC687 /* LegoBlendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoBlendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92D766D228D8C9C4002CC687 /* LegoBlendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoBlendUITests.swift; sourceTree = "<group>"; };
-		92D766D428D8C9C4002CC687 /* LegoBlendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoBlendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92DE135328EE33E8002A0E1D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		92DE135528EE3AD5002A0E1D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				92D766B628D8C9BC002CC687 /* LegoBlend */,
-				92D766C728D8C9C4002CC687 /* LegoBlendTests */,
-				92D766D128D8C9C4002CC687 /* LegoBlendUITests */,
 				92D766B528D8C9BC002CC687 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,10 +94,11 @@
 		92D766B628D8C9BC002CC687 /* LegoBlend */ = {
 			isa = PBXGroup;
 			children = (
+				92DE134C28EE1CFE002A0E1D /* Data */,
+				92DE135028EE1D20002A0E1D /* Models */,
+				92DE134D28EE1D0A002A0E1D /* Views */,
+				92DE134E28EE1D11002A0E1D /* Screens */,
 				92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */,
-				927FEFE528DBBF7000632ACC /* OnboardingView.swift */,
-				7938E5D828DCBD770013876B /* LoginView.swift */,
-				92D766B928D8C9BC002CC687 /* SplashView.swift */,
 				92D766BB28D8C9C4002CC687 /* Assets.xcassets */,
 				92D766BD28D8C9C4002CC687 /* Preview Content */,
 			);
@@ -116,21 +113,37 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		92D766C728D8C9C4002CC687 /* LegoBlendTests */ = {
+		92DE134C28EE1CFE002A0E1D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				92D766C828D8C9C4002CC687 /* LegoBlendTests.swift */,
 			);
-			path = LegoBlendTests;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		92D766D128D8C9C4002CC687 /* LegoBlendUITests */ = {
+		92DE134D28EE1D0A002A0E1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				92D766D228D8C9C4002CC687 /* LegoBlendUITests.swift */,
-				92D766D428D8C9C4002CC687 /* LegoBlendUITestsLaunchTests.swift */,
 			);
-			path = LegoBlendUITests;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92DE134E28EE1D11002A0E1D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				927FEFE528DBBF7000632ACC /* OnboardingView.swift */,
+				92D766B928D8C9BC002CC687 /* SplashView.swift */,
+				7938E5D828DCBD770013876B /* LoginView.swift */,
+				92DE135328EE33E8002A0E1D /* RegisterView.swift */,
+				92DE135528EE3AD5002A0E1D /* SettingsView.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		92DE135028EE1D20002A0E1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				927FEFE628DBBF7000632ACC /* OnboardingView.swift in Sources */,
+				92DE135428EE33E8002A0E1D /* RegisterView.swift in Sources */,
 				92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */,
+				92DE135628EE3AD5002A0E1D /* SettingsView.swift in Sources */,
 				7938E5D928DCBD770013876B /* LoginView.swift in Sources */,
 				92D766B828D8C9BC002CC687 /* LegoBlendApp.swift in Sources */,
 			);
@@ -274,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D766C928D8C9C4002CC687 /* LegoBlendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D766D328D8C9C4002CC687 /* LegoBlendUITests.swift in Sources */,
-				92D766D528D8C9C4002CC687 /* LegoBlendUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

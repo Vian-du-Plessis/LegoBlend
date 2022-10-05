@@ -43,7 +43,7 @@ struct SplashView: View {
                     .frame(width: 20, height: 20)
                     .scaleEffect(Double.random(in: 1...2))
                     .position(x: scaleAnimation ? (Double.random(in: -1...3) * 500) : (Double.random(in: -3...3) * 200), y: scaleAnimation ? (Double.random(in: -1...5) * 500) : (Double.random(in: -3...3) * 100))
-                    .animation(.easeInOut.speed(0.15).repeatForever(autoreverses: true), value: scaleAnimation)
+                    .animation(.easeInOut.speed(0.1).repeatForever(autoreverses: true), value: scaleAnimation)
             }
 
             VStack {
@@ -63,9 +63,9 @@ struct SplashView: View {
                             .offset(x: isExploded ? (Double.random(in: -1...1) * 500) : 0, y: isExploded ? (Double.random(in: -1...1) * 500) : 0)
                             .opacity(isExploded ? 0 : 1)
                             .scaleEffect(isExploded ? 13 : 1)
-                            .animation(.easeInOut.speed(0.3), value: isExploded)
+                            .animation(.easeInOut.speed(0.1), value: isExploded)
                             .scaleEffect(scaleAnimation ? Double.random(in: 1...1.2) : 1 )
-                            .animation(.easeInOut.speed(0.6).repeatForever(autoreverses: true), value: scaleAnimation)
+                            .animation(.easeInOut.speed(0.1).repeatForever(autoreverses: true), value: scaleAnimation)
                     }
                 }
                 .padding(15)
@@ -77,9 +77,9 @@ struct SplashView: View {
                             .offset(x: isExploded ? (Double.random(in: -1...1) * 500) : 0, y: isExploded ? (Double.random(in: -1...1) * 500) : 0)
                             .opacity(isExploded ? 0 : 1)
                             .scaleEffect(isExploded ? 13 : 1)
-                            .animation(.easeInOut.speed(0.3), value: isExploded)
+                            .animation(.easeInOut.speed(0.1), value: isExploded)
                             .scaleEffect(scaleAnimation ? Double.random(in: 1...1.5) : 1 )
-                            .animation(.easeInOut.speed(0.6).repeatForever(), value: scaleAnimation)
+                            .animation(.easeInOut.speed(0.1).repeatForever(), value: scaleAnimation)
                     }
                 }
                 .padding(15)

@@ -1,11 +1,3 @@
-//
-//  OnboardingView.swift
-//  LegoBlend
-//
-//  Created by Vian du Plessis on 2022/09/21.
-//
-
-import Foundation
 import SwiftUI
 
 struct OnboardingView: View {
@@ -20,6 +12,7 @@ struct OnboardingView: View {
                 
                 Image( onboardingIndex == 0 ? "pink_big_circle_right" : "blue_big_circle_right")
             }
+            //          HStack End
             
             VStack {
                 Image(onboardingIndex == 0 ? "ob_top_one" : "ob_top_two")
@@ -32,6 +25,7 @@ struct OnboardingView: View {
                     }
                 Image(onboardingIndex == 0 ? "ob_bottom_one" : "ob_botom_two")
             }
+            //          VStack End
             
             Spacer()
             
@@ -47,15 +41,17 @@ struct OnboardingView: View {
                     print("hey")
                 }
                 .padding(.leading, 15)
-
+                
                 Spacer()
-
+                
                 Button("Continue") {
                     onboardingIndex = onboardingIndex + 1
                 }
                 .padding(.trailing, 15)
             }
             .padding(.bottom, 10)
+//          HStack End
         }
+//      VStack End
     }
 }

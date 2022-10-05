@@ -1,26 +1,25 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  LegoBlend
 //
-//  Created by Elzine Brummelkamp on 2022/09/22.
+//  Created by Vian du Plessis on 2022/10/05.
 //
 
-import Foundation
 import SwiftUI
 
-struct LoginView: View {
+struct RegisterView: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var showPass = false
     var body: some View {
         VStack {
             VStack {
-                Image("login_top")
+                Image("register_top")
                 
                 HStack() {
-                    Image("login_bottom_left")
+                    Image("register_bottom_left")
                     
-                    Image("login_bottom_right")
+                    Image("register_bottom_right")
                 }
                 .padding(.leading, 30)
 //              HStack End
@@ -29,7 +28,7 @@ struct LoginView: View {
 //          VStack End
             
             
-            Text("Log In with your email and password below")
+            Text("Please complete the form below to register")
                 .frame(maxWidth: .infinity)
                 .padding(.bottom, 30)
             
@@ -81,7 +80,7 @@ struct LoginView: View {
             Spacer()
             
             VStack(alignment: .trailing) {
-                    Button("Log In") {
+                    Button("Register") {
 //                            Functionality
                     }
                     .padding(.trailing, 30)
@@ -92,7 +91,7 @@ struct LoginView: View {
                         RoundedRectangle(cornerRadius: 10).stroke(Color("primary_three"), lineWidth: 2)
                     )
 
-                Text("Don't have an account? Register Here")
+                Text("Already have an account? Login In Here")
                     .frame(alignment: .trailing)
                     .font(.footnote)
             }
@@ -103,8 +102,8 @@ struct LoginView: View {
     }
 }
 
-struct Previews_LoginView_Previews: PreviewProvider {
+struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        RegisterView()
     }
 }
