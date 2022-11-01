@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7938E5D928DCBD770013876B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938E5D828DCBD770013876B /* LoginView.swift */; };
 		927FEFE628DBBF7000632ACC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FEFE528DBBF7000632ACC /* OnboardingView.swift */; };
 		92D766B828D8C9BC002CC687 /* LegoBlendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */; };
 		92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B928D8C9BC002CC687 /* SplashView.swift */; };
 		92D766BC28D8C9C4002CC687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D766BB28D8C9C4002CC687 /* Assets.xcassets */; };
 		92D766BF28D8C9C4002CC687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D766BE28D8C9C4002CC687 /* Preview Assets.xcassets */; };
-		92DE135428EE33E8002A0E1D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE135328EE33E8002A0E1D /* RegisterView.swift */; };
 		92DE135628EE3AD5002A0E1D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE135528EE3AD5002A0E1D /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7938E5D828DCBD770013876B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		927FEFE528DBBF7000632ACC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		92D766B428D8C9BC002CC687 /* LegoBlend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoBlend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoBlendApp.swift; sourceTree = "<group>"; };
@@ -44,7 +41,6 @@
 		92D766BE28D8C9C4002CC687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92D766C428D8C9C4002CC687 /* LegoBlendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoBlendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D766CE28D8C9C4002CC687 /* LegoBlendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoBlendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92DE135328EE33E8002A0E1D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		92DE135528EE3AD5002A0E1D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,8 +128,6 @@
 			children = (
 				927FEFE528DBBF7000632ACC /* OnboardingView.swift */,
 				92D766B928D8C9BC002CC687 /* SplashView.swift */,
-				7938E5D828DCBD770013876B /* LoginView.swift */,
-				92DE135328EE33E8002A0E1D /* RegisterView.swift */,
 				92DE135528EE3AD5002A0E1D /* SettingsView.swift */,
 			);
 			name = Screens;
@@ -277,10 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				927FEFE628DBBF7000632ACC /* OnboardingView.swift in Sources */,
-				92DE135428EE33E8002A0E1D /* RegisterView.swift in Sources */,
 				92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */,
 				92DE135628EE3AD5002A0E1D /* SettingsView.swift in Sources */,
-				7938E5D928DCBD770013876B /* LoginView.swift in Sources */,
 				92D766B828D8C9BC002CC687 /* LegoBlendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

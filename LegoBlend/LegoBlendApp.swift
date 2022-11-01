@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct LegoBlendApp: App {
+    @AppStorage("onBoarding") var showOnBoarding: Bool = true
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            if showOnBoarding {
+                OnboardingView()
+            } else {
+                SplashView()
+            }
         }
     }
 }

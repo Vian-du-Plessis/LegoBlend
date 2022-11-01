@@ -3,6 +3,7 @@ import SwiftUI
 struct OnboardingView: View {
     @State private var onboardingIndex = 0
     @State private var rotateAnimation = false
+    @AppStorage("onBoarding") var showOnBoarding: Bool = true
     var body: some View {
         VStack {
             HStack {
@@ -46,6 +47,9 @@ struct OnboardingView: View {
                 
                 Button("Continue") {
                     onboardingIndex = onboardingIndex + 1
+                    if onboardingIndex > 2 {
+                        showOnBoarding = false
+                    }
                 }
                 .padding(.trailing, 15)
             }
