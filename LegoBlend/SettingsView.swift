@@ -11,6 +11,8 @@ struct SettingsView: View {
     var body: some View {
         VStack {
             Image("Settings")
+            
+            Spacer()
                 
             VStack {
                 Image("red_lego")
@@ -59,6 +61,8 @@ struct SettingsView: View {
                     // Function
                 }
             }
+            
+            Spacer()
         }
     }
 }
