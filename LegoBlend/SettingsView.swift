@@ -8,66 +8,104 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State var about = false
+    @State var appearance = false
+    @State var developer = false
     var body: some View {
-        VStack {
-            Image("Settings")
-            
-            Spacer()
-                
+        ScrollView {
             VStack {
-                Image("red_lego")
-                    .resizable()
-                    .frame(width: 60, height: 60)
+                Image("Settings")
                 
-                HStack {
-                    Text("About Lego Blend")
-                        .foregroundColor(Color("primary_one"))
-                        .fontWeight(.bold)
+                Spacer()
                     
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(Color("primary_one"))
-                }
-            }
-            
-            VStack {
-                Image("orange_lego")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                
-                HStack {
-                    Text("App Appearance")
-                        .foregroundColor(Color("primary_two"))
-                        .fontWeight(.bold)
+                VStack {
+                    Image("red_lego")
+                        .resizable()
+                        .frame(width: 60, height: 60)
                     
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(Color("primary_two"))
+                    HStack {
+                        Text("About Lego Blend")
+                            .foregroundColor(Color("primary_one"))
+                            .fontWeight(.bold)
+                        
+                        Image(systemName: !about ? "chevron.right" : "chevron.down")
+                            .foregroundColor(Color("primary_one"))
+                            .onTapGesture{
+                                about.toggle()
+                            }
+                    }
                 }
-            }
-            
-            VStack {
-                Image("green_lego")
-                    .resizable()
-                    .frame(width: 60, height: 60)
                 
-                HStack {
-                    Text("About the Developer")
+                if about {
+                    VStack(alignment: .leading) {
+                        Text("App Description:")
+                            .font(.headline)
+                            .foregroundColor(Color("primary_two"))
+                            .padding(15)
+                        
+                Text("""
+        Lego Blend aims to give users inspiration and ideas for their next lego builds !\n
+        All builds include instructions to follow ! Users are also able to upload their builds and save other builds\n
+        Browse through , save and search for some great lego builds to try out.
+        \nLego Blend will also give you a lego summary including ; The total tutorials , Total builds completed and new builds
+        """)
                         .foregroundColor(Color("primary_three"))
-                        .fontWeight(.bold)
+                        .padding(15)
+                        
+                    }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color("primary_two"), lineWidth: 2)
+                    )
+                }
+                
+                VStack {
+                    Image("orange_lego")
+                        .resizable()
+                        .frame(width: 60, height: 60)
                     
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(Color("primary_three"))
+                    HStack {
+                        Text("App Appearance")
+                            .foregroundColor(Color("primary_two"))
+                            .fontWeight(.bold)
+                        
+                        Image(systemName: !appearance ? "chevron.right" : "chevron.down")
+                            .foregroundColor(Color("primary_two"))
+                            .onTapGesture {
+                                appearance.toggle()
+                            }
+                    }
                 }
-                .onTapGesture {
-                    // Function
+                
+                VStack {
+                    Image("green_lego")
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                    
+                    HStack {
+                        Text("About the Developer")
+                            .foregroundColor(Color("primary_three"))
+                            .fontWeight(.bold)
+                        
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(Color("primary_three"))
+                    }
+                    .onTapGesture {
+                        // Function
+                    }
                 }
+                
+                Spacer()
             }
-            
-            Spacer()
+            .padding(20)
+            .frame(maxHeight: .infinity)
         }
+        .frame(maxHeight: .infinity)
     }
+    
 }
 
-struct SettingsView_Previews: PreviewProvider {
+struct Previews_SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
     }
