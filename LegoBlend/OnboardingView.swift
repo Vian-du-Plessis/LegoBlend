@@ -59,3 +59,9 @@ struct OnboardingView: View {
 //      VStack End
     }
 }
+
+struct Previews_OnboardingView_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardingView()
+    }
+}

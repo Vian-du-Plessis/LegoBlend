@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219B00C129125B0300A15C4D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B00C029125B0300A15C4D /* HomeView.swift */; };
+		219B00C529128D0900A15C4D /* BuildPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B00C429128D0900A15C4D /* BuildPreviewView.swift */; };
 		927FEFE628DBBF7000632ACC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FEFE528DBBF7000632ACC /* OnboardingView.swift */; };
 		92D766B828D8C9BC002CC687 /* LegoBlendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */; };
 		92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D766B928D8C9BC002CC687 /* SplashView.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		219B00C029125B0300A15C4D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		219B00C429128D0900A15C4D /* BuildPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BuildPreviewView.swift; path = LegoBlend/BuildPreviewView.swift; sourceTree = SOURCE_ROOT; };
 		927FEFE528DBBF7000632ACC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		92D766B428D8C9BC002CC687 /* LegoBlend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoBlend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D766B728D8C9BC002CC687 /* LegoBlendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoBlendApp.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		92DE134D28EE1D0A002A0E1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				219B00C429128D0900A15C4D /* BuildPreviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				927FEFE528DBBF7000632ACC /* OnboardingView.swift */,
 				92D766B928D8C9BC002CC687 /* SplashView.swift */,
 				92DE135528EE3AD5002A0E1D /* SettingsView.swift */,
+				219B00C029125B0300A15C4D /* HomeView.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 				927FEFE628DBBF7000632ACC /* OnboardingView.swift in Sources */,
 				92D766BA28D8C9BC002CC687 /* SplashView.swift in Sources */,
 				92DE135628EE3AD5002A0E1D /* SettingsView.swift in Sources */,
+				219B00C129125B0300A15C4D /* HomeView.swift in Sources */,
+				219B00C529128D0900A15C4D /* BuildPreviewView.swift in Sources */,
 				92D766B828D8C9BC002CC687 /* LegoBlendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
